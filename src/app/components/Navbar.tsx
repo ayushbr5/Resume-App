@@ -23,32 +23,37 @@ const Navbar: React.FC = () => {
           {/* Navigation Links */}
           <div className="hidden md:block">
             <div className="flex items-center space-x-8">
-              <a
-                href="#how-it-works"
+              <Link
+                href="/how-it-works"
                 className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium border-b-2 border-teal-400 text-teal-600"
               >
                 How It Works
-              </a>
-              <a
-                href="#features"
+              </Link>
+              <Link
+                href="/features"
                 className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium"
               >
                 Features
-              </a>
-              <a
-                href="#contact"
+              </Link>
+              <Link
+                href="/contact"
                 className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium"
               >
                 Contact
-              </a>
+              </Link>
             </div>
           </div>
 
-          {/* Action Button */}
-          <div className="hidden md:block">
+          {/* Action Buttons */}
+          <div className="hidden md:flex space-x-3">
             <Link href="/auth/signin">
               <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">
                 Sign In
+              </button>
+            </Link>
+            <Link href="/auth/signin/signup">
+              <button className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">
+                Sign Up
               </button>
             </Link>
           </div>
@@ -81,28 +86,33 @@ const Navbar: React.FC = () => {
       {/* Mobile menu */}
       <div className="md:hidden">
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-100">
-          <a
-            href="#how-it-works"
+          <Link
+            href="/how-it-works"
             className="block px-3 py-2 text-sm font-medium text-teal-600 border-l-4 border-teal-400"
           >
             How It Works
-          </a>
-          <a
-            href="#features"
+          </Link>
+          <Link
+            href="/features"
             className="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-600"
           >
             Features
-          </a>
-          <a
-            href="#contact"
+          </Link>
+          <Link
+            href="/contact"
             className="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-600"
           >
             Contact
-          </a>
-          <div className="pt-4">
+          </Link>
+          <div className="pt-4 flex flex-col space-y-2">
             <Link href="/auth/signin">
               <button className="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium">
                 Sign In
+              </button>
+            </Link>
+            <Link href="F">
+              <button className="w-full bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md text-sm font-medium">
+                Sign Up
               </button>
             </Link>
           </div>

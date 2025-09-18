@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import AIRecruitmentSimulation from './components/Bot';
+import RoleSelection from './components/RoleSelection';
 import React from 'react';
 
 const Page = () => {
@@ -8,6 +9,7 @@ const Page = () => {
     <>
     <Navbar/>
     <HeroSection/>
+    < RoleSelection />
     <AIRecruitmentSimulation />
     </>
   );
